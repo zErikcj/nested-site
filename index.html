@@ -253,7 +253,14 @@
     .pain-cards,.rev-grid{grid-template-columns:1fr}
     .arc{grid-template-columns:1fr}
     .arc-track{display:none}
-    .inc-grid{grid-template-columns:1fr}
+  }
+  /* compact 2-col "what's inside" on phones (less scrolling) */
+  @media(max-width:560px){
+    .inc-grid{gap:12px}
+    .inc{flex-direction:column;gap:9px;padding:16px 15px}
+    .inc .tick{width:34px;height:34px;border-radius:10px}
+    .inc h3{font-size:.95rem;line-height:1.2}
+    .inc p{font-size:.82rem;line-height:1.38}
   }
   @media(prefers-reduced-motion:reduce){
     *{scroll-behavior:auto!important}
