@@ -173,6 +173,13 @@
   .rev .who{margin-top:16px;font-family:'Figtree',sans-serif;font-style:normal;font-weight:600;font-size:.9rem;color:var(--ink-soft)}
   .rev-note{text-align:center;font-size:.86rem;color:var(--ink-soft);margin-top:20px}
 
+  /* founder's note */
+  .note-card{max-width:760px;margin:0 auto;text-align:center;background:var(--card);border-radius:var(--radius);padding:48px 46px;box-shadow:var(--shadow-soft);border:1px solid var(--line)}
+  .note-quote{font-family:'Fraunces',serif;font-size:1.4rem;line-height:1.5;color:var(--ink);margin:18px 0 20px;font-weight:500}
+  .note-quote em{color:var(--accent);font-style:italic}
+  .note-sign{font-family:'Figtree',sans-serif;font-weight:600;color:var(--ink-soft);font-size:.95rem}
+  @media(max-width:640px){.note-card{padding:36px 26px}.note-quote{font-size:1.18rem}}
+
   /* offer */
   .offer{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
   .offer-card{max-width:640px;margin:0 auto;background:var(--card);border-radius:26px;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden}
@@ -310,7 +317,7 @@ src="https://www.facebook.com/tr?id=286771517203261&ev=PageView&noscript=1"/></n
     <div class="brand"><span class="dot"></span>Nested</div>
     <nav class="nav-links">
       <a href="#inside">What's inside</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#why">Why Nested</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a href="#offer" class="btn nav-cta">Get the guide</a>
@@ -465,20 +472,14 @@ src="https://www.facebook.com/tr?id=286771517203261&ev=PageView&noscript=1"/></n
   </div>
 </section>
 
-<!-- REVIEWS (placeholders) -->
-<section class="sec" id="reviews">
+<!-- FOUNDER'S NOTE -->
+<section class="sec" id="why">
   <div class="wrap">
-    <div class="sec-head center reveal">
-      <span class="eyebrow" style="justify-content:center">In their words</span>
-      <h2>Loved by expecting parents</h2>
-      <p>Real words from real readers land here. Add three of your favourite reviews once your first customers reply.</p>
+    <div class="note-card reveal">
+      <span class="eyebrow" style="justify-content:center">Why we made Nested</span>
+      <blockquote class="note-quote">Pregnancy shouldn't feel like a second full-time job of research. We built The Calm Pregnancy Guide to be the one companion we'd want by our own side — every week in plain language, every checklist made to lift one more worry off your plate. It's here to help you feel <em>calm, prepared and in control</em> — backed by our 14-day promise: if it doesn't do that for you, you get every cent back.</blockquote>
+      <div class="note-sign">— The Nested team</div>
     </div>
-    <div class="rev-grid">
-      <div class="rev reveal"><div class="stars">★★★★★</div><p>“Add a genuine customer review here — the exact words a happy reader sent you.”</p><div class="who">— First name, city (replace with a real reader)</div></div>
-      <div class="rev reveal"><div class="stars">★★★★★</div><p>“Keep it specific: what worried them before, and how the guide made it feel manageable.”</p><div class="who">— First name, city (replace with a real reader)</div></div>
-      <div class="rev reveal"><div class="stars">★★★★★</div><p>“A short, honest quote about one thing they loved converts better than anything invented.”</p><div class="who">— First name, city (replace with a real reader)</div></div>
-    </div>
-    <p class="rev-note">These are placeholders — swap in real reviews only. Never invent testimonials.</p>
   </div>
 </section>
 
@@ -579,7 +580,7 @@ src="https://www.facebook.com/tr?id=286771517203261&ev=PageView&noscript=1"/></n
       <div class="brand"><span class="dot"></span>Nested</div>
       <div class="foot-links">
         <a href="#inside">What's inside</a>
-        <a href="#reviews">Reviews</a>
+        <a href="#why">Why Nested</a>
         <a href="#faq">FAQ</a>
         <a href="#">Contact</a>
         <a href="#">Terms</a>
