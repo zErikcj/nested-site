@@ -100,6 +100,13 @@
   .reassure{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;font-size:.9rem;font-weight:500;color:var(--sage-deep)}
   .reassure span{display:inline-flex;align-items:center;gap:.4rem}
 
+  /* trust strip */
+  .trustbar{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .trustbar-in{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 30px;padding:18px 24px;max-width:var(--maxw);margin:0 auto}
+  .trustbar span{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:600;color:var(--ink-soft)}
+  .trustbar .ic{color:var(--sage-deep);font-weight:700}
+  @media(max-width:560px){.trustbar-in{gap:10px 16px}.trustbar span{font-size:.8rem}}
+
   /* soft ambient shapes */
   .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.5;z-index:0;pointer-events:none}
   .blob.a{width:340px;height:340px;background:radial-gradient(circle at 30% 30%,var(--blush),transparent 70%);top:-90px;right:-80px}
@@ -352,8 +359,8 @@ pintrk('page');
       <div class="hero-cta-row">
         <a href="#offer" class="btn btn-lg">Get instant access <span class="arw">→</span></a>
         <div class="price-tag">
-          <span class="price-now"><s>€29</s>€11</span>
-          <span class="price-sub">One-time payment · Instant download</span>
+          <span class="price-now">€11</span>
+          <span class="price-sub">Introductory launch price · one-time · instant PDF</span>
         </div>
       </div>
       <div class="reassure">
@@ -368,6 +375,17 @@ pintrk('page');
       <img decoding="async" fetchpriority="high" width="1200" height="1100" class="hero-book" src="nested-hero2.webp" alt="The Calm Pregnancy Guide book with real pages from inside the guide">
       <div class="badge-float badge-2"><span class="ic">↓</span> Instant PDF</div>
     </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trustbar">
+  <div class="trustbar-in">
+    <span><span class="ic">✓</span> 34-page digital guide</span>
+    <span><span class="ic">✓</span> Plain-language, grounded in trusted pregnancy guidance</span>
+    <span><span class="ic">✓</span> Instant PDF — read on any device</span>
+    <span><span class="ic">✓</span> Secure checkout</span>
+    <span><span class="ic">✓</span> 14-day money-back guarantee</span>
   </div>
 </section>
 
@@ -493,7 +511,7 @@ pintrk('page');
   <div class="wrap">
     <div class="note-card reveal">
       <span class="eyebrow" style="justify-content:center">Why we made Nested</span>
-      <blockquote class="note-quote">Pregnancy shouldn't feel like a second full-time job of research. We built The Calm Pregnancy Guide to be the one companion we'd want by our own side — every week in plain language, every checklist made to lift one more worry off your plate. It's here to help you feel <em>calm, prepared and in control</em> — backed by our 14-day promise: if it doesn't do that for you, you get every cent back.</blockquote>
+      <blockquote class="note-quote">Pregnancy shouldn't feel like a second full-time job of research. We built The Calm Pregnancy Guide to be the one companion we'd want by our own side — every week in plain language, drawn from trusted, up-to-date pregnancy guidance, every checklist made to lift one more worry off your plate. It's here to help you feel <em>calm, prepared and in control</em> — backed by our 14-day promise: if it doesn't do that for you, you get every cent back.</blockquote>
       <div class="note-sign">— The Nested team</div>
     </div>
   </div>
@@ -539,7 +557,7 @@ pintrk('page');
         </div>
         <div class="price-block">
           <div class="big"><span class="cur">€</span>11</div>
-          <div class="once">One-time payment · Instant download · Yours forever</div>
+          <div class="once">A 34-page PDF, delivered to your inbox in seconds · one-time payment · yours forever</div>
         </div>
         <a href="https://payhip.com/buy?link=FpGU7" class="btn btn-lg" id="buy">Get instant access now →</a>
         <div class="mini-reassure">
@@ -574,6 +592,7 @@ pintrk('page');
       <details class="reveal"><summary>Is this a physical book? <span class="pm">+</span></summary><div class="ans">No — it's a digital guide (PDF). That means you get it instantly, you can read it on any device, and you can print any pages you like. Nothing is shipped.</div></details>
       <details class="reveal"><summary>When do I get it? <span class="pm">+</span></summary><div class="ans">Right away. The moment your payment goes through, you'll get an instant download link and a copy by email. You could be reading it two minutes from now.</div></details>
       <details class="reveal"><summary>I'm already a few weeks along — is it still useful? <span class="pm">+</span></summary><div class="ans">Absolutely. It's organised by week, so you simply jump to where you are today and keep going. Nothing is wasted, and the checklists work at any stage.</div></details>
+      <details class="reveal"><summary>Can I trust the information inside? <span class="pm">+</span></summary><div class="ans">Yes. It's written in clear, plain language and grounded in widely-trusted, up-to-date pregnancy guidance, organised so it's easy to follow week by week. It's designed to help you feel informed and prepared — and to complement, never replace, the care of your own midwife or doctor.</div></details>
       <details class="reveal"><summary>Does this replace my midwife or doctor? <span class="pm">+</span></summary><div class="ans">Never. This guide helps you feel organised, informed and calm — but it's for general information only and doesn't replace medical care. Always follow the advice of your own midwife or doctor.</div></details>
       <details class="reveal"><summary>What if it's not for me? <span class="pm">+</span></summary><div class="ans">You're covered by a 14-day money-back guarantee. If it doesn't help, email us within 14 days and we'll refund you in full.</div></details>
     </div>
